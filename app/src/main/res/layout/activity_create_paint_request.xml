@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#202020">
+
+    <include layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/ownerNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Имя владельца"
+            android:textColorHint="#A9A9A9"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Номер телефона"
+            android:inputType="number"
+            android:textColorHint="#A9A9A9"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/modelEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Модель авто"
+            android:textColorHint="#A9A9A9"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/colorEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Цвет"
+            android:textColorHint="#A9A9A9"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/datePickerButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Выберите дату"
+                android:backgroundTint="#ADFF2F"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/timePickerButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Выберите время"
+                android:backgroundTint="#ADFF2F"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Отправить заявку"
+            android:backgroundTint="#ADFF2F"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+</LinearLayout>
